@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fast_delivery"
+        android:scaleX="1.5"
+        android:scaleY="4"
+        android:id="@+id/bImage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:id="@+id/t_UserID"
+        />
+
+    
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/E_UserID"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:id="@+id/t_Password"
+        android:layout_below="@+id/E_UserID"
+        />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/E_Password"
+        android:layout_below="@+id/t_Password"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:id="@+id/t_Date"
+        android:layout_below="@+id/E_Password"
+        />
+
+    <EditText
+        android:layout_below="@+id/t_Date"
+        android:id="@+id/E_Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/YYYY"
+         >
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:id="@+id/t_Email"
+        android:layout_below="@+id/E_Date"
+        />
+
+    <EditText
+        android:layout_below="@+id/t_Email"
+        android:id="@+id/E_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/B_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:layout_below="@id/E_Email"
+        android:layout_centerHorizontal="true"
+        android:onClick="SignUp"
+        />
+
+</RelativeLayout>
